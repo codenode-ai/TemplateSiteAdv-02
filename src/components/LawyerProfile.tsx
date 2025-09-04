@@ -55,7 +55,7 @@ export default function LawyerProfile() {
           <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <div className="relative group mb-8">
               <img
-                src="https://postimg.cc/ZWZpnwwq"
+                src="/Dra. Camila Lopes.jpg"
                 alt="Dra. Camila Lopes da Silva - Advogada"
                 className="rounded-xl shadow-2xl w-full h-auto group-hover:scale-105 transition-transform duration-500"
                 data-testid="img-lawyer-portrait"
