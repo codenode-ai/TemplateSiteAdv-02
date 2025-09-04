@@ -36,8 +36,6 @@ export default function Hero() {
         
         <p className="text-xl sm:text-2xl text-light-gray mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.3s" }}>
           Defesa dos seus direitos com respeito, competência e resultados comprovados.
-          <br />
-          Estratégias jurídicas personalizadas para proteger a sua liberdade e reputação.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.6s" }}>
