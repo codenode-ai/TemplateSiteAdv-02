@@ -9,7 +9,7 @@
   --cor-primaria: #2A364C;      /* Azul escuro (10% - destaque/cta) */
   --cor-secundaria: #A17D6D;    /* Bege médio escurecido (30% - blocos e seções) */
   --cor-neutra: #D2BEB0;        /* Bege claro (60% - fundo base) */
-  --cor-texto: #2A364C;         /* Azul escuro para texto */
+  --cor-texto: #FFFFFF;         /* Branco para texto */
   --cor-texto-inverso: #FFFFFF; /* Branco para texto em fundos escuros */
   
   /* Cores adicionais para elementos específicos */

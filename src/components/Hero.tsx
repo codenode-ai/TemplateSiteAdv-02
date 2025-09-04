@@ -32,7 +32,7 @@ export default function Hero() {
           <span className="text-cor-texto-inverso">Advocacia Criminal</span>
         </h1>
         
-        <p className="text-xl sm:text-2xl text-cor-neutra mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.3s" }}>
+        <p className="text-xl sm:text-2xl text-cor-texto-inverso mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.3s" }}>
           Defesa dos seus direitos com respeito, competência e resultados comprovados.
         </p>
 
@@ -55,7 +55,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <p className="text-xs text-cor-neutra/60 mt-6 animate-slide-up" style={{ animationDelay: "0.9s" }}>
+        <p className="text-xs text-cor-texto-inverso/60 mt-6 animate-slide-up" style={{ animationDelay: "0.9s" }}>
           * Conteúdo do site é fictício e criado apenas para fins demonstrativos
         </p>
       </div>
