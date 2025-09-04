@@ -1,37 +1,37 @@
 export default function LawyerProfile() {
   return (
-    <section id="advogada" className="py-20 bg-dark-gray">
+    <section id="advogada" className="py-20 bg-cor-neutra">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up">
-            <h2 className="font-serif text-4xl font-bold mb-6 text-golden" data-testid="text-lawyer-title">
+            <h2 className="font-serif text-4xl font-bold mb-6 text-cor-primaria" data-testid="text-lawyer-title">
               A Advogada
             </h2>
             
-            <h3 className="font-serif text-2xl font-semibold mb-4 text-white" data-testid="text-lawyer-name">
+            <h3 className="font-serif text-2xl font-semibold mb-4 text-cor-texto" data-testid="text-lawyer-name">
               Dra. Camila Lopes da Silva
             </h3>
             
-            <p className="text-lg text-light-gray mb-6 leading-relaxed" data-testid="text-lawyer-bio-1">
+            <p className="text-lg text-cor-texto mb-6 leading-relaxed" data-testid="text-lawyer-bio-1">
               Advogada penal com mais de 10 anos de atuação. Formação na UFSC e especializações em Penal, Processo Penal e Compliance.
             </p>
             
-            <p className="text-lg text-light-gray mb-6 leading-relaxed" data-testid="text-lawyer-bio-2">
+            <p className="text-lg text-cor-texto mb-6 leading-relaxed" data-testid="text-lawyer-bio-2">
               Reconhecida por sua atuação estratégica e humanizada na defesa dos direitos de seus clientes, Dra. Camila combina conhecimento técnico profundo com uma abordagem empática no atendimento.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-              <div className="bg-graphite p-6 rounded-lg" data-testid="card-education">
-                <h4 className="font-semibold text-golden mb-2">Formação Acadêmica</h4>
-                <ul className="text-light-gray space-y-1 text-sm">
+              <div className="bg-cor-secundaria p-6 rounded-lg" data-testid="card-education">
+                <h4 className="font-semibold text-cor-primaria mb-2">Formação Acadêmica</h4>
+                <ul className="text-cor-texto space-y-1 text-sm">
                   <li>• Graduação em Direito - UFSC</li>
                   <li>• Pós-graduação em Direito Penal e Processual Penal</li>
                 </ul>
               </div>
               
-              <div className="bg-graphite p-6 rounded-lg" data-testid="card-specializations">
-                <h4 className="font-semibold text-golden mb-2">Especializações</h4>
-                <ul className="text-light-gray space-y-1 text-sm">
+              <div className="bg-cor-secundaria p-6 rounded-lg" data-testid="card-specializations">
+                <h4 className="font-semibold text-cor-primaria mb-2">Especializações</h4>
+                <ul className="text-cor-texto space-y-1 text-sm">
                   <li>• Tribunal do Júri</li>
                   <li>• Crimes Econômicos</li>
                   <li>• Crimes Cibernéticos</li>
@@ -40,13 +40,13 @@ export default function LawyerProfile() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-8">
-              <span className="px-4 py-2 bg-golden/10 text-golden rounded-full text-sm border border-golden/20" data-testid="badge-oab">
+              <span className="px-4 py-2 bg-cor-primaria/10 text-cor-primaria rounded-full text-sm border border-cor-primaria/20" data-testid="badge-oab">
                 OAB/SC 67890
               </span>
-              <span className="px-4 py-2 bg-golden/10 text-golden rounded-full text-sm border border-golden/20" data-testid="badge-experience">
+              <span className="px-4 py-2 bg-cor-primaria/10 text-cor-primaria rounded-full text-sm border border-cor-primaria/20" data-testid="badge-experience">
                 10+ Anos de Experiência
               </span>
-              <span className="px-4 py-2 bg-golden/10 text-golden rounded-full text-sm border border-golden/20" data-testid="badge-cases">
+              <span className="px-4 py-2 bg-cor-primaria/10 text-cor-primaria rounded-full text-sm border border-cor-primaria/20" data-testid="badge-cases">
                 150+ Casos Bem-sucedidos
               </span>
             </div>
@@ -63,11 +63,11 @@ export default function LawyerProfile() {
               <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-golden transition-all duration-500"></div>
               
               {/* Achievements Badge - positioned on the image */}
-              <div className="absolute -bottom-4 -right-4 bg-dark-gray p-4 rounded-xl border border-golden/20 shadow-2xl" data-testid="card-achievement">
+              <div className="absolute -bottom-4 -right-4 bg-cor-secundaria p-4 rounded-xl border border-cor-primaria/20 shadow-2xl" data-testid="card-achievement">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-golden">10+</div>
-                  <div className="text-xs text-light-gray">Anos de</div>
-                  <div className="text-xs text-light-gray">Experiência</div>
+                  <div className="text-2xl font-bold text-cor-primaria">10+</div>
+                  <div className="text-xs text-cor-texto">Anos de</div>
+                  <div className="text-xs text-cor-texto">Experiência</div>
                 </div>
               </div>
             </div>

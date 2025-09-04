@@ -5,68 +5,80 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 7%);
-  --foreground: hsl(0, 0%, 100%);
-  --card: hsl(0, 0%, 10%);
-  --card-foreground: hsl(0, 0%, 100%);
-  --popover: hsl(0, 0%, 7%);
-  --popover-foreground: hsl(0, 0%, 100%);
-  --primary: hsl(51, 100%, 50%);
-  --primary-foreground: hsl(0, 0%, 7%);
-  --secondary: hsl(0, 0%, 80%);
-  --secondary-foreground: hsl(0, 0%, 7%);
-  --muted: hsl(0, 0%, 10%);
-  --muted-foreground: hsl(0, 0%, 80%);
-  --accent: hsl(0, 0%, 10%);
-  --accent-foreground: hsl(51, 100%, 50%);
-  --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(51, 100%, 50%, 0.2);
-  --input: hsl(0, 0%, 10%);
-  --ring: hsl(51, 100%, 50%);
-  --chart-1: hsl(51, 100%, 50%);
-  --chart-2: hsl(160, 60%, 45%);
-  --chart-3: hsl(30, 80%, 55%);
-  --chart-4: hsl(280, 65%, 60%);
-  --chart-5: hsl(340, 75%, 55%);
-  --sidebar: hsl(0, 0%, 10%);
-  --sidebar-foreground: hsl(0, 0%, 100%);
-  --sidebar-primary: hsl(51, 100%, 50%);
-  --sidebar-primary-foreground: hsl(0, 0%, 7%);
-  --sidebar-accent: hsl(0, 0%, 10%);
-  --sidebar-accent-foreground: hsl(51, 100%, 50%);
-  --sidebar-border: hsl(51, 100%, 50%, 0.2);
-  --sidebar-ring: hsl(51, 100%, 50%);
+  /* Nova paleta de cores seguindo a regra 60-30-10 */
+  --cor-primaria: #2A364C;      /* Azul escuro (10% - destaque/cta) */
+  --cor-secundaria: #A17D6D;    /* Bege médio escurecido (30% - blocos e seções) */
+  --cor-neutra: #D2BEB0;        /* Bege claro (60% - fundo base) */
+  --cor-texto: #2A364C;         /* Azul escuro para texto */
+  --cor-texto-inverso: #FFFFFF; /* Branco para texto em fundos escuros */
+  
+  /* Cores adicionais para elementos específicos */
+  --background: #D2BEB0;        /* Fundo principal (60%) */
+  --foreground: #2A364C;        /* Texto principal (10%) */
+  --card: #A17D6D;              /* Cartões e blocos (30%) */
+  --card-foreground: #2A364C;   /* Texto em cartões (10%) */
+  --popover: #2A364C;           /* Elementos de popover (10%) */
+  --popover-foreground: #FFFFFF;/* Texto em popovers (branco) */
+  --primary: #2A364C;           /* Cor primária (10%) */
+  --primary-foreground: #FFFFFF;/* Texto em elementos primários */
+  --secondary: #A17D6D;         /* Cor secundária (30%) */
+  --secondary-foreground: #2A364C;/* Texto em elementos secundários */
+  --muted: #D2BEB0;             /* Cor neutra (60%) */
+  --muted-foreground: #2A364C;  /* Texto em áreas neutras (10%) */
+  --accent: #2A364C;            /* Cor de destaque (10%) */
+  --accent-foreground: #FFFFFF; /* Texto em elementos de destaque */
+  --destructive: #A17D6D;       /* Cor para elementos destrutivos (30%) */
+  --destructive-foreground: #2A364C;/* Texto em elementos destrutivos */
+  --border: #A17D6D;            /* Cor de bordas (30%) */
+  --input: #D2BEB0;             /* Fundo de inputs (60%) */
+  --ring: #2A364C;              /* Cor de anéis de foco (10%) */
+  --chart-1: #2A364C;           /* Cor para gráficos (10%) */
+  --chart-2: #A17D6D;           /* Cor para gráficos (30%) */
+  --chart-3: #D2BEB0;           /* Cor para gráficos (60%) */
+  --chart-4: #2A364C;           /* Cor para gráficos (10%) */
+  --chart-5: #A17D6D;           /* Cor para gráficos (30%) */
+  --sidebar: #2A364C;           /* Fundo da sidebar (10%) */
+  --sidebar-foreground: #FFFFFF;/* Texto da sidebar (branco) */
+  --sidebar-primary: #2A364C;   /* Elementos primários da sidebar (10%) */
+  --sidebar-primary-foreground: #FFFFFF;/* Texto em elementos primários da sidebar */
+  --sidebar-accent: #A17D6D;    /* Elementos de destaque da sidebar (30%) */
+  --sidebar-accent-foreground: #2A364C;/* Texto em elementos de destaque da sidebar */
+  --sidebar-border: #A17D6D;    /* Bordas da sidebar (30%) */
+  --sidebar-ring: #2A364C;      /* Anéis de foco da sidebar (10%) */
+  
   --font-sans: 'Roboto', sans-serif;
   --font-serif: 'Merriweather', serif;
   --font-mono: 'JetBrains Mono', monospace;
   --radius: 1.3rem;
-  --graphite: hsl(0, 0%, 7%);
-  --dark-gray: hsl(0, 0%, 10%);
-  --golden: hsl(51, 100%, 50%);
-  --light-gray: hsl(0, 0%, 80%);
+  
+  /* Cores legadas mantidas para compatibilidade */
+  --graphite: #2A364C;
+  --dark-gray: #A17D6D;
+  --golden: #2A364C;
+  --light-gray: #2A364C;
 }
 
 .dark {
-  --background: hsl(0, 0%, 7%);
-  --foreground: hsl(0, 0%, 100%);
-  --card: hsl(0, 0%, 10%);
-  --card-foreground: hsl(0, 0%, 100%);
-  --popover: hsl(0, 0%, 7%);
-  --popover-foreground: hsl(0, 0%, 100%);
-  --primary: hsl(51, 100%, 50%);
-  --primary-foreground: hsl(0, 0%, 7%);
-  --secondary: hsl(0, 0%, 80%);
-  --secondary-foreground: hsl(0, 0%, 7%);
-  --muted: hsl(0, 0%, 10%);
-  --muted-foreground: hsl(0, 0%, 80%);
-  --accent: hsl(0, 0%, 10%);
-  --accent-foreground: hsl(51, 100%, 50%);
-  --destructive: hsl(0, 84%, 60%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --border: hsl(51, 100%, 50%, 0.2);
-  --input: hsl(0, 0%, 10%);
-  --ring: hsl(51, 100%, 50%);
+  /* Mantendo as mesmas cores para o modo escuro */
+  --background: #D2BEB0;
+  --foreground: #3A465C;
+  --card: #BB9684;
+  --card-foreground: #3A465C;
+  --popover: #3A465C;
+  --popover-foreground: #FFFFFF;
+  --primary: #3A465C;
+  --primary-foreground: #FFFFFF;
+  --secondary: #BB9684;
+  --secondary-foreground: #3A465C;
+  --muted: #D2BEB0;
+  --muted-foreground: #3A465C;
+  --accent: #3A465C;
+  --accent-foreground: #FFFFFF;
+  --destructive: #BB9684;
+  --destructive-foreground: #3A465C;
+  --border: #BB9684;
+  --input: #D2BEB0;
+  --ring: #3A465C;
 }
 
 @layer base {

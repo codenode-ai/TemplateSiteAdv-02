@@ -25,13 +25,13 @@ const differentials = [
 
 export default function Differentials() {
   return (
-    <section className="py-20 bg-graphite">
+    <section className="py-20 bg-cor-neutra">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="font-serif text-4xl font-bold mb-6 text-golden" data-testid="text-differentials-title">
+          <h2 className="font-serif text-4xl font-bold mb-6 text-cor-primaria" data-testid="text-differentials-title">
             Nossos Diferenciais
           </h2>
-          <p className="text-xl text-light-gray max-w-3xl mx-auto" data-testid="text-differentials-description">
+          <p className="text-xl text-cor-texto max-w-3xl mx-auto" data-testid="text-differentials-description">
             O que nos torna únicos na prestação de serviços jurídicos criminais
           </p>
         </div>
@@ -46,15 +46,15 @@ export default function Differentials() {
                 style={{ animationDelay: `${(index + 1) * 0.1}s` }}
                 data-testid={`card-differential-${index}`}
               >
-                <div className="w-20 h-20 bg-golden/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-golden/20 group-hover:scale-110 transition-all duration-300">
-                  <IconComponent className="w-10 h-10 text-golden" />
+                <div className="w-20 h-20 bg-cor-primaria/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-cor-primaria/20 group-hover:scale-110 transition-all duration-300">
+                  <IconComponent className="w-10 h-10 text-cor-primaria" />
                 </div>
                 
-                <h3 className="font-serif text-xl font-bold mb-3 text-white" data-testid={`text-differential-title-${index}`}>
+                <h3 className="font-serif text-xl font-bold mb-3 text-cor-texto" data-testid={`text-differential-title-${index}`}>
                   {differential.title}
                 </h3>
                 
-                <p className="text-light-gray" data-testid={`text-differential-description-${index}`}>
+                <p className="text-cor-texto" data-testid={`text-differential-description-${index}`}>
                   {differential.description}
                 </p>
               </div>

@@ -61,10 +61,18 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        graphite: "hsl(0, 0%, 7%)",
-        "dark-gray": "hsl(0, 0%, 10%)",
-        golden: "hsl(51, 100%, 50%)",
-        "light-gray": "hsl(0, 0%, 80%)",
+        // Cores da nova paleta seguindo a regra 60-30-10
+        "cor-primaria": "#2A364C",      // Azul escuro (10% - destaque/cta)
+        "cor-secundaria": "#A17D6D",    // Bege médio escurecido (30% - blocos e seções)
+        "cor-neutra": "#D2BEB0",        // Bege claro (60% - fundo base)
+        "cor-texto": "#2A364C",         // Azul escuro para texto
+        "cor-texto-inverso": "#FFFFFF", // Branco para texto em fundos escuros
+        
+        // Cores legadas mantidas para compatibilidade
+        graphite: "#3A465C",
+        "dark-gray": "#BB9684",
+        golden: "#3A465C",
+        "light-gray": "#3A465C",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],

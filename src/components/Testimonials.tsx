@@ -47,13 +47,13 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-20 bg-dark-gray">
+    <section className="py-20 bg-cor-neutra">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="font-serif text-4xl font-bold mb-6 text-golden" data-testid="text-testimonials-title">
+          <h2 className="font-serif text-4xl font-bold mb-6 text-cor-primaria" data-testid="text-testimonials-title">
             Depoimentos de Clientes
           </h2>
-          <p className="text-xl text-light-gray max-w-3xl mx-auto" data-testid="text-testimonials-description">
+          <p className="text-xl text-cor-texto max-w-3xl mx-auto" data-testid="text-testimonials-description">
             A satisfação dos nossos clientes é o nosso maior indicador de sucesso
           </p>
         </div>
@@ -67,28 +67,28 @@ export default function Testimonials() {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0">
-                  <div className="bg-graphite p-8 rounded-xl border border-golden/20 max-w-4xl mx-auto" data-testid={`testimonial-${index}`}>
+                  <div className="bg-cor-secundaria p-8 rounded-xl border border-cor-primaria/20 max-w-4xl mx-auto" data-testid={`testimonial-${index}`}>
                     <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-golden/10 rounded-full flex items-center justify-center mr-4">
-                        <svg className="w-8 h-8 text-golden" fill="currentColor" viewBox="0 0 24 24">
+                      <div className="w-16 h-16 bg-cor-primaria/10 rounded-full flex items-center justify-center mr-4">
+                        <svg className="w-8 h-8 text-cor-primaria" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.57-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-4v-10h10z"/>
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white text-lg" data-testid={`testimonial-name-${index}`}>
+                        <h4 className="font-semibold text-cor-texto text-lg" data-testid={`testimonial-name-${index}`}>
                           {testimonial.name}
                         </h4>
-                        <p className="text-light-gray text-sm" data-testid={`testimonial-position-${index}`}>
+                        <p className="text-cor-texto text-sm" data-testid={`testimonial-position-${index}`}>
                           {testimonial.position}
                         </p>
                       </div>
                     </div>
                     
-                    <p className="text-light-gray text-lg leading-relaxed italic mb-4" data-testid={`testimonial-content-${index}`}>
+                    <p className="text-cor-texto text-lg leading-relaxed italic mb-4" data-testid={`testimonial-content-${index}`}>
                       "{testimonial.content}"
                     </p>
                     
-                    <div className="flex text-golden">
+                    <div className="flex text-cor-primaria">
                       {[...Array(testimonial.rating)].map((_, starIndex) => (
                         <svg key={starIndex} className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
@@ -104,7 +104,7 @@ export default function Testimonials() {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-golden/10 hover:bg-golden/20 border border-golden/20 rounded-full flex items-center justify-center text-golden hover:text-golden transition-all duration-300"
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-cor-primaria/10 hover:bg-cor-primaria/20 border border-cor-primaria/20 rounded-full flex items-center justify-center text-cor-primaria hover:text-cor-primaria transition-all duration-300"
             data-testid="button-prev-testimonial"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -112,7 +112,7 @@ export default function Testimonials() {
           
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-golden/10 hover:bg-golden/20 border border-golden/20 rounded-full flex items-center justify-center text-golden hover:text-golden transition-all duration-300"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-cor-primaria/10 hover:bg-cor-primaria/20 border border-cor-primaria/20 rounded-full flex items-center justify-center text-cor-primaria hover:text-cor-primaria transition-all duration-300"
             data-testid="button-next-testimonial"
           >
             <ChevronRight className="w-6 h-6" />
@@ -125,7 +125,7 @@ export default function Testimonials() {
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? "bg-golden" : "bg-golden/30 hover:bg-golden"
+                  index === currentSlide ? "bg-cor-primaria" : "bg-cor-primaria/30 hover:bg-cor-primaria"
                 }`}
                 data-testid={`dot-${index}`}
               />
