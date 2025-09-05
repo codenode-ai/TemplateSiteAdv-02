@@ -108,7 +108,7 @@ export default function PracticeAreas() {
                 data-testid={`card-area-${index}`}
               >
                 <div className="w-16 h-16 bg-cor-primaria/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cor-primaria/20 transition-colors duration-300">
-                  <IconComponent className="w-8 h-8 text-cor-primaria" />
+                  <IconComponent className="w-8 h-8 text-cor-texto-inverso" />
                 </div>
                 
                 <h3 className="font-serif text-2xl font-bold mb-4 text-cor-texto group-hover:text-cor-primaria transition-colors duration-300">
